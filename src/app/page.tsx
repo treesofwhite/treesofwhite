@@ -59,12 +59,12 @@ export default function Home() {
       </div>
       <a
         href=""
-        className={`hover:bg-green-600 hover:text-white hover:border-green-600 backdrop-blur rounded-lg border border-neutral-700 px-5 py-2 hover:text-neutral-400 select-none transition p-1 uppercase font-semibold mx-16 text-center`}
+        className={`group flex items-center hover:text-neutral-400 select-none transition p-1 uppercase font-semibold mx-16 text-center`}
         style={{ fontSize: "1.25rem", letterSpacing: "0.2em" }}
         target="_blank"
       >
-        <span className="font-black">OUT NOW</span> — NO EXPECTATIONS Ft. AILSA
-        SMITH 🡕
+        <span className="font-black contents">OUT NOW</span> — NO EXPECTATIONS
+        Ft. AILSA SMITH
       </a>
     </main>
   );
