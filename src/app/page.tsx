@@ -5,14 +5,17 @@ const navLinks = [
   {
     title: "Instagram",
     url: "https://instagram.com",
+    className: "hover:text-pink-700",
   },
   {
     title: "Spotify",
     url: "https://www.spotify.com",
+    className: "hover:text-green-700",
   },
   {
     title: "Youtube",
     url: "https://www.youtube.com",
+    className: "hover:text-red-700",
   },
 ];
 
@@ -43,7 +46,7 @@ export default function Home() {
           {navLinks.map((link) => (
             <a
               href={link.url}
-              className={`hover:opacity-50 select-none transition p-1 uppercase font-semibold`}
+              className={`text-neutral-50 select-none transition p-1 uppercase font-semibold ${link.className}`}
               style={{ fontSize: "0.9rem", letterSpacing: "0.2em" }}
               target="_blank"
               draggable={false}
@@ -56,7 +59,7 @@ export default function Home() {
       </div>
       <a
         href=""
-        className={`hover:opacity-50 select-none transition p-1 uppercase font-semibold px-8 text-center`}
+        className={`hover:text-neutral-400 select-none transition p-1 uppercase font-semibold px-8 text-center`}
         style={{ fontSize: "0.9rem", letterSpacing: "0.2em" }}
         target="_blank"
       >
