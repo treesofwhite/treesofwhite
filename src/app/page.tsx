@@ -59,7 +59,7 @@ export default function Home() {
       </div>
       <a
         href=""
-        className={`hover:text-neutral-400 select-none transition p-1 uppercase font-semibold px-16 text-center`}
+        className={`hover:bg-green-600 hover:text-white hover:border-green-600 backdrop-blur rounded-lg border border-neutral-700 px-5 py-2 hover:text-neutral-400 select-none transition p-1 uppercase font-semibold mx-16 text-center`}
         style={{ fontSize: "1.25rem", letterSpacing: "0.2em" }}
         target="_blank"
       >
