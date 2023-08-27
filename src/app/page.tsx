@@ -69,8 +69,8 @@ const navLinks = [
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center p-3 md:p-12 bg-white dark:bg-black">
-      <div className="flex flex-col items-center justify-center mt-24 mb-16 md:mb-20">
+    <main className="flex min-h-screen flex-col items-center p-3 md:p-12 pb-16 md:pb-32 bg-white dark:bg-black">
+      <div className="flex flex-col items-center justify-center mt-20 mb-16 md:mb-20">
         <Image
           src="title.svg"
           alt="Vercel Logo"
@@ -96,6 +96,7 @@ export default function Home() {
               className={`hover:opacity-50 select-none transition p-1 ${link.className}`}
               target="_blank"
               draggable={false}
+              key={link.title}
             >
               <Image
                 src={link.img_url}
@@ -147,13 +148,12 @@ export default function Home() {
         priority
       />
       <p
-        className="text-gray-500 tracking-widest  uppercase font-medium md:w-2/5 text-center mt-12 leading-6"
+        className="text-gray-500 tracking-widest  uppercase font-medium md:w-3/5 px-6 text-center mt-10 md:mt-12 leading-6"
         style={{ letterSpacing: "0.3em", fontSize: "0.7rem" }}
       >
-        Trees of white is a Scottish producer of clasically inspired progressive
-        house music. With an emphasis on warmth, meaningful progression and In
-        Trees of White aims to provide an antidote to club centric dance music.
-        His first album, 'Foundations' sets the tone
+        Trees of White is a Scottish house music producer living in London.
+        Often incorporating orchestral and classical instruments, he aims to
+        provide a heartfelt yet energetic sound.
       </p>
     </main>
   );
