@@ -59,8 +59,8 @@ export default function Home() {
       </div>
       <a
         href=""
-        className={`hover:text-neutral-400 select-none transition p-1 uppercase font-semibold px-8 text-center`}
-        style={{ fontSize: "0.9rem", letterSpacing: "0.2em" }}
+        className={`hover:text-neutral-400 select-none transition p-1 uppercase font-semibold px-16 text-center`}
+        style={{ fontSize: "1.25rem", letterSpacing: "0.2em" }}
         target="_blank"
       >
         <span className="font-black">OUT NOW</span> — NO EXPECTATIONS Ft. AILSA
