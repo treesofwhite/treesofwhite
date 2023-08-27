@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 const videos = [
   {
     title: "Track 1",
@@ -71,23 +69,21 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center p-3 md:p-12 pb-16 md:pb-32 bg-white dark:bg-black">
       <div className="flex flex-col items-center justify-center mt-20 mb-16 md:mb-20">
-        <Image
+        <img
           src="title.svg"
           alt="Vercel Logo"
-          className=" hidden md:block"
+          className="hidden md:block"
           width={600}
           draggable={false}
           height={50}
-          priority
         />
-        <Image
+        <img
           src="title_mobile.svg"
           alt="Vercel Logo"
-          className=" block md:hidden"
+          className="block md:hidden"
           width={200}
           draggable={false}
           height={50}
-          priority
         />
         <div className="flex items-center flex-col md:flex-row gap-3 mt-20 md:mt-8">
           {navLinks.map((link) => (
@@ -98,13 +94,12 @@ export default function Home() {
               draggable={false}
               key={link.title}
             >
-              <Image
+              <img
                 src={link.img_url}
                 alt={link.title}
                 draggable={false}
                 width={110}
                 height={90}
-                priority
               />
             </a>
           ))}
@@ -124,7 +119,7 @@ export default function Home() {
               draggable={false}
               target="_blank"
             >
-              <Image
+              <img
                 aria-label={v.title}
                 src={v.img_url}
                 alt={v.title}
@@ -132,20 +127,18 @@ export default function Home() {
                 className="rounded-lg"
                 width={500}
                 height={300}
-                priority
               />
             </a>
           );
         })}
       </section>
-      <Image
+      <img
         src="about_section_title.svg"
         alt="Vercel Logo"
         className="mt-28 select-none"
         width={200}
         draggable={false}
         height={50}
-        priority
       />
       <p
         className="text-gray-500 tracking-widest  uppercase font-medium md:w-3/5 px-6 text-center mt-10 md:mt-12 leading-6"
