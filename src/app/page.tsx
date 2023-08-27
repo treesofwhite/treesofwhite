@@ -17,19 +17,9 @@ const navLinks = [
 ];
 
 export default function Home() {
-  const [bgReady, setBgReady] = React.useState(false);
-
-  React.useEffect(() => {
-    fetch("/bg.png").then(() => {
-      setBgReady(true);
-    });
-  }, []);
-
   return (
     <main
-      className={`bg-[url('/bg.png')] ${
-        bgReady ? "opacity-1" : "opacity-0"
-      } bg-cover bg-center flex min-h-screen flex-col items-center justify-between py-20   text-white bg-black`}
+      className={`bg-[url('/bg.png')]  bg-cover bg-center flex min-h-screen flex-col items-center justify-between py-20   text-white bg-black`}
     >
       <div></div>
       <div>
