@@ -8,5 +8,5 @@ Very simple NextJS site, statically exported to github pages. Image optimization
 - React-Icons
 
 ### Fonts
-- Logo Font - **Exodus Display**
-- Body Font - **Raleway**
+- Logo - **Exodus Display**
+- Body - **Raleway**
